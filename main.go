@@ -9,12 +9,12 @@ func main() {
 		Packages: []*tygo.PackageConfig{
 			{
 				Path: "github.com/metacubex/mihomo/config",
-				TypeMappings: map[string]string{
-					"interface{}": "any /* hyperparameters */",
-				},
+				// TypeMappings: map[string]string{
+				// 	"interface{}": "any /* hyperparameters */",
+				// },
 				FallbackType: "any",
-				OutputPath:   "./dts",
-				Flavor:       "json",
+				OutputPath:   "./mihomo",
+				Flavor:       "yaml",
 			},
 		},
 	}
